@@ -1,0 +1,34 @@
+[
+    {
+        "isim": "body",
+        "soru": "Yukarıdaki kod çalışmamaktadır. Kodun çalışması için boşluğa gerekli kodu yazınız.",
+        "ustSoru": "<head> \n <title> Özel Öğretim Yöntemleri </title> \n <body> \n <p> Derse hoşgeldiniz. </p> \n",
+        "altSoru": "</head>",
+        "cevap": "</body>",
+        "cevapYazi": "Doğru cevap '</body>'. Açılan etiketler kapatılmalıdır."
+    },
+    {
+        "isim": "h1",
+        "soru": "Oluşacak çıktıda ilk paragrafa 'Beyin Fırtınası' başlığı verilmek isteniyor. Ve bu başlık diğer başlıklardan daha genel olmalı. Yukarıdaki boşluğa bu gereksinimleri karşılayan kodları yazınız.",
+        "ustSoru": "<body> \n",
+        "altSoru":"<p> Bu konumuzda 'Beyin fırtınası' tekniğini anlatacağız.' </p> \n <h2> Açıklaması </h2> \n <p> Açıklama. </p> \n </body>",
+        "cevap": "<h1>Beyin Fırtınası</h1>",
+        "cevapYazi": "Doğru cevap '<h1>Beyin Fırtınası</h1>'. Sayfadaki en genel başlığı <h1> etiketi ile belirleriz. "
+    },
+    {
+    "isim": "a",
+    "soru": "Çıktıyı çalışan bir link haline getirmek için boşluğu -\"\"'ları yazmadan- doldurunuz.",
+    "ustSoru": "<body> \n <a ",
+    "altSoru": "> Buraya tıklayınız </a> \n </body>",
+    "cevap": "href=",
+    "cevapYazi": "Doğru cevap 'href='. <a> etiketinin nereye yönlendireceğini belirlemek için 'href' özelliğini kullanırız."
+    },
+    {
+    "isim": "img",
+    "soru": "Yukarıdaki boşluğa, çıktıda görünecek resmin yüksekliğini 250px olarak ayarlayacak kodu yazınız. (Çift tırnak kullanmayınız.)",
+    "ustSoru": "<body> \n <img width='250px' src='xx'",
+    "altSoru": "> \n </body>",
+    "cevap": "height='250px'",
+    "cevapYazi": "Doğru cevap 'height='250px''. Yükseklik özelliği 'height' ile belirlenir."
+    }
+]

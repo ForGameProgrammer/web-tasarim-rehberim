@@ -24,6 +24,7 @@ class ActivitySoru : AppCompatActivity() {
     lateinit var tvCevap: TextView
     lateinit var tvSoru: TextView
     var konu: Soru1? = null
+    val RENK_YESIL = 0xFF00A320
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -46,14 +47,14 @@ class ActivitySoru : AppCompatActivity() {
         if(soru== null) finish()
         var jsonSorular = ""
         //TODO: RAW Değişecek
-        resources.openRawResource(R.raw.a).bufferedReader().use {
+        resources.openRawResource(R.raw.sorular1).bufferedReader().use {
             jsonSorular= it.readText()
         }
         if (jsonSorular=="") {
             Log.e("ActivitySoru1", "json Dosyası Boş yada okunamadı!")
             finish()
         }
-        val sorular = Klaxon().parseArray<Soru2>(jsonSorular)
+        val sorular = Klaxon().parseArray<Soru1>(jsonSorular)
 
         sorular!!.forEach {
             if(soru!!.toLowerCase() == it.isim.toLowerCase().trim())  konu=it
@@ -72,7 +73,7 @@ class ActivitySoru : AppCompatActivity() {
             tvCevap.setTextColor(Color.RED)
             if (editCevap.text.toString().toLowerCase().trim() == konu!!.cevap.toLowerCase().trim())
             {
-                tvCevap.setTextColor(Color.GREEN)
+                tvCevap.setTextColor(RENK_YESIL.toInt())
             }
         }
 

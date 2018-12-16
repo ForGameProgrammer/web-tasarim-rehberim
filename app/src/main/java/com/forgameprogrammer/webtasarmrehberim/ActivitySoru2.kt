@@ -2,6 +2,7 @@ package com.forgameprogrammer.webtasarmrehberim
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
@@ -22,6 +23,7 @@ class ActivitySoru2 : AppCompatActivity() {
     lateinit var btnCevap3:Button
     lateinit var btnCevap4:Button
     var konu:Soru2? = null
+    val RENK_YESIL = 0xFF00A320
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,7 +45,7 @@ class ActivitySoru2 : AppCompatActivity() {
         if(soru== null) finish()
         var jsonSorular = ""
         //TODO: RAW Değişecek
-        resources.openRawResource(R.raw.a).bufferedReader().use {
+        resources.openRawResource(R.raw.sorular2).bufferedReader().use {
             jsonSorular= it.readText()
         }
         if (jsonSorular=="") {
@@ -60,7 +62,7 @@ class ActivitySoru2 : AppCompatActivity() {
             finish()
         }
 
-        val rasgele = (1..4).random()
+        val rasgele = (0..3).random()
         val buttonlar = mutableListOf(btnCevap1, btnCevap2, btnCevap3, btnCevap4)
         val btn = buttonlar[rasgele]
         buttonlar.removeAt(rasgele)
@@ -77,7 +79,7 @@ class ActivitySoru2 : AppCompatActivity() {
         }
         buttonlar[0].setOnClickListener {
             tvCevap.visibility = View.VISIBLE
-            tvCevap.setTextColor(Color.GREEN)
+            tvCevap.setTextColor(RENK_YESIL.toInt())
         }
 
         tvSoru.setText(konu!!.soru)

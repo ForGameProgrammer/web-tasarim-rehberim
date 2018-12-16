@@ -1,0 +1,38 @@
+[
+    {
+    "isim": "head",
+    "soru": "Aşağıdaki etiketlerden hangisi <head> etiketinin içerisine yazılır?",
+    "dogruCevap": "<meta>",
+    "cevap2": "<p>",
+    "cevap3": "<background-color>",
+    "cevap4": "<h1>",
+    "cevapYazi": "Doğru cevap '<meta>'. <meta> etiketiyle sayfa hakkında bilgi veririz ve içeriği ekranda görünmez."
+    },
+    {
+        "isim": "style",
+        "soru": "<style> etiketi nereye yazılmalıdır?",
+        "dogruCevap": "<head> etiketinin içerisine.",
+        "cevap2": "<body> etiketinin üzerine.",
+        "cevap3": "<body> etiketinin içerisine.",
+        "cevap4": "<head> etiketinin altına.",
+        "cevapYazi": "Doğru cevap '<head> etiketinin içerisine.'. 'style', etiket olarak kullanılmak istendiğinde <head> etiketinin içerisine yazılır."
+    },
+    {
+        "isim": "title",
+        "soru": "<title> etiketi ne işe yarar?",
+        "dogruCevap": "Sayfanın başlığını belirler.",
+        "cevap2": "Paragraflara başlık yazar.",
+        "cevap3": "Sayfanın en üzerine yazı ekler.",
+        "cevap4": "Diğer etiketleri birbirinden ayırır.",
+        "cevapYazi": "Doğru cevap 'Sayfanın başlığını belirler.'. <title> etiketi sayfanın içerisinde görünmez ancak arama motorlarına ve tarayıcılara bilgi verir."
+    },
+    {
+        "isim": "div",
+        "soru": "<div> etiketi ne için kullanılır?",
+        "dogruCevap": "Etiketleri gruplamak için.",
+        "cevap2": "Sayfaya resim eklemek için.",
+        "cevap3": "Sayfaya link eklemek için.",
+        "cevap4": "Etiketleri birleştirmek için.",
+        "cevapYazi": "Doğru cevap 'Etiketleri gruplamak için.'. <div> etiketi içinde diğer etiketleri de bulundurabilir ve onlara topluca özellik atayabilir."
+    }
+]
